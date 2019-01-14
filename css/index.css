@@ -88,7 +88,7 @@ header {
 	position: fixed;
 	right: 0;
 	top: 0;
-	width: 100%;
+	width: 98%;
 	z-index: 1;
 }
 
@@ -97,6 +97,12 @@ header {
         flex-wrap: wrap;
         height: auto;
         position: relative; 
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        width: 100%
     }
 }
 
@@ -135,10 +141,14 @@ header nav a:active {
 @media (max-width: 500px) {
     header nav a {
         border-top: 1px solid black;
-        font-size: 16px;
-        padding: 20px 0 25px 0;
+        font-size: 18px;
+        padding: 22px 0 20px 0;
         text-align: center;
         width: 100%;
+    }
+
+    header nav a:first-child {
+        margin-top: 20px;
     }
 
     header nav a:last-child {
@@ -157,18 +167,17 @@ header > a {
 @media (max-width: 800px) {
     header > a {
         margin: auto;
-        margin-top: 30px;
         width: 183px;
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     header > a {
-        margin-top: 20px;
+        padding-top: 20px;
     }
 }
 
-header > a img {
+header a img {
 	width: 100%;
 }
 
@@ -223,7 +232,7 @@ main {
 
 @media (max-width: 500px) {
     .landing-text h1 {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 }
 
@@ -261,14 +270,15 @@ main {
 .article-top-section {
 	border-top: 2px solid black;
 	display: flex;
-	justify-content: space-between;
-	padding-top: 40px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 35px;
+    width: 98%;
 }
 
 @media (max-width: 800px) {
     .article-top-section {
         justify-content: space-around;
-        margin: auto;
         margin-top: 80px;
         width: 95%;
     }
@@ -284,7 +294,7 @@ main {
 
 .article-top-section div {
 	/* border: 1px solid red; */
-	width: 48%;
+	width: 49%;
 }
 
 @media (max-width: 500px) {
@@ -296,8 +306,8 @@ main {
 
 article img {
     display: block;
-	margin: 40px 0;
-	width: 100%;
+	margin: 40px 0 30px 0;
+    width: 98%;
 }
 
 @media (max-width: 800px) {
@@ -317,14 +327,15 @@ article img {
 .article-middle-section {
 	border-bottom: 2px solid black;
 	display: flex;
-	justify-content: space-between;
-	padding-bottom: 40px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 40px;
+    width: 98%;
 }
 
 @media (max-width: 800px) {
     .article-middle-section {
         justify-content: space-around;
-        margin: auto;
         margin-top: 30px;
         padding-bottom: 70px;
         width: 95%;
@@ -339,8 +350,8 @@ article img {
 }
 
 .article-middle-section div {
-	/* border: 1px solid red; */
-	width: 31%;
+    /* border: 1px solid red; */
+	width: 33%;
 }
 
 @media (max-width: 800px) {
@@ -362,7 +373,8 @@ article img {
 }
 
 .article-bottom-section {
-	padding-top: 30px;
+    padding-top: 30px;
+    width: 98%;
 }
 
 @media (max-width: 800px) {
