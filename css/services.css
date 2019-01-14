@@ -62,3 +62,62 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header > a {
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+header nav {
+    margin-top: 20px;
+    order: 1;
+    width: 100%;
+}
+
+header nav a {
+    border-top: 1px solid black;
+    display: block;
+    font-size: 18px;
+    padding: 22px 0 20px 0;
+    text-align: center;
+}
+
+header nav a:last-child {
+    border-bottom: 1px solid black;
+}
+
+header nav a,
+header nav a:hover,
+header nav a:active {
+	color: grey;
+	text-decoration: none;
+}
+
+.landing {
+    padding: 10px;
+}
+
+.landing img {
+   display: none;
+   /* width: 100%; */
+}
+
+.landing h1 {
+    font-size: 25px;
+}
+
+.main-content article {
+    background-color: #f4f3fa;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 35px;
+    min-width: 300px;
+    padding: 15px;
+    width: 80%;
+}
